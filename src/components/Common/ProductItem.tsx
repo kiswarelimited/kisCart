@@ -10,6 +10,7 @@ import { updateproductDetails } from "@/redux/features/product-details";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import Link from "next/link";
+import ShareProduct from "@/components/Common/ShareProduct";
 
 const ProductItem = ({ item }: { item: Product }) => {
   const { openModal } = useModalContext();
@@ -112,6 +113,8 @@ const ProductItem = ({ item }: { item: Product }) => {
               />
             </svg>
           </button>
+
+          <ShareProduct item={item} />
         </div>
       </div>
 

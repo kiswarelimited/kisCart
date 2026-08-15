@@ -3,8 +3,8 @@ import BlogGridWithSidebar from "@/components/BlogGridWithSidebar";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Blog Grid Page | NextCommerce Nextjs E-commerce template",
-  description: "This is Blog Grid Page for NextCommerce Template",
+  title: "Blog Grid With Sidebar | KisCart",
+  description: "Dive into KisCart's blog with a sidebar layout for the latest tips, trends, and online shopping guides.",
   // other metadata
 };
 

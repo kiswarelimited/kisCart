@@ -5,7 +5,8 @@ import LatestPosts from "../Blog/LatestPosts";
 import LatestProducts from "../Blog/LatestProducts";
 import blogData from "../BlogGrid/blogData";
 import Image from "next/image";
-import shopData from "../Shop/shopData"; 
+import shopData from "../Shop/shopData";
+import Comments from "./Comments";
 
 const BlogDetailsWithSidebar = () => {
   return (
@@ -260,6 +261,10 @@ const BlogDetailsWithSidebar = () => {
                   </div>
                   {/* <!-- Social Links end --> */}
                 </div>
+
+                {/* <!-- Comments start --> */}
+                <Comments />
+                {/* <!-- Comments end --> */}
               </div>
             </div>
 

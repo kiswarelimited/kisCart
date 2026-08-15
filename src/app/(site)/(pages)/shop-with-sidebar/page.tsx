@@ -3,8 +3,8 @@ import ShopWithSidebar from "@/components/ShopWithSidebar";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Shop Page | NextCommerce Nextjs E-commerce template",
-  description: "This is Shop Page for NextCommerce Template",
+  title: "Shop | KisCart",
+  description: "Shop KisCart's curated products with convenient filters and a sidebar layout.",
   // other metadata
 };
 

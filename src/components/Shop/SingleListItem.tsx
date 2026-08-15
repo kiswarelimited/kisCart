@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import Link from "next/link";
 import Image from "next/image";
+import ShareProduct from "@/components/Common/ShareProduct";
 
 const SingleListItem = ({ item }: { item: Product }) => {
   const { openModal } = useModalContext();
@@ -106,6 +107,8 @@ const SingleListItem = ({ item }: { item: Product }) => {
                 />
               </svg>
             </button>
+
+            <ShareProduct item={item} />
           </div>
         </div>
 

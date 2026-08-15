@@ -9,6 +9,7 @@ import { addItemToCart } from "@/redux/features/cart-slice";
 import Image from "next/image";
 import Link from "next/link";
 import { addItemToWishlist } from "@/redux/features/wishlist-slice";
+import ShareProduct from "@/components/Common/ShareProduct";
 
 const SingleItem = ({ item }: { item: Product }) => {
   const { openModal } = useModalContext();
@@ -186,6 +187,8 @@ const SingleItem = ({ item }: { item: Product }) => {
               />
             </svg>
           </button>
+
+          <ShareProduct item={item} />
         </div>
       </div>
     </div>

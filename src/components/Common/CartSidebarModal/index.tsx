@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 import { useCartModalContext } from "@/app/context/CartSidebarModalContext";
+import { usePaymentModalContext } from "@/app/context/PaymentModalContext";
 import {
   removeItemFromCart,
   selectTotalPrice,
@@ -14,6 +15,7 @@ import EmptyCart from "./EmptyCart";
 
 const CartSidebarModal = () => {
   const { isCartModalOpen, closeCartModal } = useCartModalContext();
+  const { openPaymentModal } = usePaymentModalContext();
   const cartItems = useAppSelector((state) => state.cartReducer.items);
 
   const totalPrice = useSelector(selectTotalPrice);
@@ -107,12 +109,15 @@ const CartSidebarModal = () => {
                 View Cart
               </Link>
 
-              <Link
-                href="/checkout"
+              <button
+                onClick={() => {
+                  closeCartModal();
+                  openPaymentModal();
+                }}
                 className="w-full flex justify-center font-medium text-white bg-dark py-[13px] px-6 rounded-md ease-out duration-200 hover:bg-opacity-95"
               >
                 Checkout
-              </Link>
+              </button>
             </div>
           </div>
         </div>
