@@ -47,6 +47,10 @@ const SingleListItem = ({ item }: { item: Product }) => {
         <div className="shadow-list relative overflow-hidden flex items-center justify-center max-w-[270px] w-full sm:min-h-[270px] p-4">
           <Image src={item.imgs.previews[0]} alt="" width={250} height={250} />
 
+          <span className="absolute top-4 left-4 z-10 text-custom-xs font-medium text-white py-1 px-3 rounded bg-red">
+            {item.stock} left
+          </span>
+
           <div className="absolute left-0 bottom-0 translate-y-full w-full flex items-center justify-center gap-2.5 pb-5 ease-linear duration-200 group-hover:translate-y-0">
             <button
               onClick={() => {

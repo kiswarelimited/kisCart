@@ -46,6 +46,10 @@ const SingleGridItem = ({ item }: { item: Product }) => {
       <div className="relative overflow-hidden flex items-center justify-center rounded-lg bg-white shadow-1 min-h-[270px] mb-4">
         <Image src={item.imgs.previews[0]} alt="" width={250} height={250} />
 
+        <span className="absolute top-4 left-4 z-10 text-custom-xs font-medium text-white py-1 px-3 rounded bg-red">
+          {item.stock} left
+        </span>
+
         <div className="absolute left-0 bottom-0 translate-y-full w-full flex items-center justify-center gap-2.5 pb-5 ease-linear duration-200 group-hover:translate-y-0">
           <button
             onClick={() => {
