@@ -1,6 +1,6 @@
 # kisCart
 
-kisCart is an eCommerce platform owned and developed by **Kisware Limited**.
+kisCart is an eCommerce platform owned and developed by **Kisware Limited**..
 
 ## Update Logs
 
